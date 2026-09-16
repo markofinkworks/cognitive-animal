@@ -40,7 +40,7 @@ const ANIMALS = {
       catchphrase: `世界は、"光景"として残っていく。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `タコ型の脳は、
+      narrative_opening: `タコ型は、
 世界を"光景"として受け取っている。
 
 視界は一気に広がり、
@@ -121,7 +121,7 @@ const ANIMALS = {
       catchphrase: `世界は、"響き"として残っていく。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `クジラ型の脳は、
+      narrative_opening: `クジラ型は、
  世界を“響き”として受け取っている。
 
 耳に届くのは、
@@ -197,7 +197,7 @@ const ANIMALS = {
       catchphrase: `世界は、"音"として読み解かれる。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `コウモリ型の脳は、
+      narrative_opening: `コウモリ型は、
  世界を"音"として受け取っている。
 
 耳に届くのは、
@@ -276,7 +276,7 @@ const ANIMALS = {
       catchphrase: `世界は、"震え"として読み解かれる。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `モグラ型の脳は、
+      narrative_opening: `モグラ型は、
  世界を"震え"として受け取っている。
 
 身体が感じるのは、
@@ -350,7 +350,7 @@ const ANIMALS = {
       catchphrase: `世界は、"全景"として広がっていく。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `タカ型の脳は、
+      narrative_opening: `タカ型は、
 世界を“全景”として受け取っている。
 
 視界は高く、はるか遠くまで一望する。
@@ -429,7 +429,7 @@ const ANIMALS = {
       catchphrase: `世界は、"和音"として広がっていく。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `オオカミ型の脳は、
+      narrative_opening: `オオカミ型は、
  世界を"和音"として受け取っている。
 
 森を渡る風、
@@ -501,7 +501,7 @@ const ANIMALS = {
       catchphrase: `世界は、"うねり"として広がっていく。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `ゾウ型の脳は、
+      narrative_opening: `ゾウ型は、
  世界を"うねり"として受け取っている。
 
 身体が感じるのは、
@@ -577,7 +577,7 @@ const ANIMALS = {
       catchphrase: `世界は、"手順"として整う。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `ビーバー型の脳は、
+      narrative_opening: `ビーバー型は、
 世界を“手順”として受け取っている。
 
 視点はいつも自分のすぐ近くから始まる。
@@ -653,7 +653,7 @@ const ANIMALS = {
       catchphrase: `世界は、"リズム"として整う。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `インコ型の脳は、
+      narrative_opening: `インコ型は、
 世界を“リズム”として受け取っている。
 
 耳に届くのは、
@@ -728,7 +728,7 @@ const ANIMALS = {
       catchphrase: `世界は、"重心"として整う。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `ヤギ型の脳は、
+      narrative_opening: `ヤギ型は、
 世界を“重心”として受け取っている。
 
 身体が感じるのは、
@@ -803,7 +803,7 @@ const ANIMALS = {
       catchphrase: `世界は、"配置"として読み解かれる。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `カラス型の脳は、
+      narrative_opening: `カラス型は、
 世界を"配置"として受け取っている。
 
 視点はまず一点に置かれ、
@@ -883,7 +883,7 @@ const ANIMALS = {
       catchphrase: `世界は、"軌跡"として残っていく。`,
       lede: `私たちは同じ世界を見ていても、
 受け取っている形式が少しずつ違う。`,
-      narrative_opening: `ウミガメ型の脳は、
+      narrative_opening: `ウミガメ型は、
 世界を"軌跡"として受け取っている。
 
 身体が感じるのは、

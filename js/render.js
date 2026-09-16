@@ -47,7 +47,7 @@ function renderResultPage() {
   fillText("narrative-bridge", d.narrative_bridge);
   fillText("narrative-closing", d.narrative_closing);
 
-  fillText("brain-heading", (ANIMALS[slug].jp.animal_name || "") + "型の脳の世界の感じ方");
+  fillText("brain-heading", (ANIMALS[slug].jp.animal_name || "") + "型の世界の感じ方");
   fillText("vak-label", d.vak_label);
   fillBullets("vak-bullets", d.vak_bullets);
   fillText("vak-description", d.vak_description);
