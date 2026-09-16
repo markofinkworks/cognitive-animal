@@ -62,7 +62,7 @@ function renderResultPage() {
   fillText("strategy-title-vak", d.strategy_title_vak);
   fillText("strategy-body-vak", d.strategy_body_vak);
   fillText("strategy-title-eawp", d.strategy_title_eawp);
-  fillText("strategy-feature", d.fstrategy_feature);
+  fillText("strategy-feature", d.strategy_feature);
   fillText("strategy-scenarios", d.strategy_scenarios);
   fillText("strategy-questions", d.strategy_questions);
   fillText("strategy-resolution", d.strategy_resolution);
