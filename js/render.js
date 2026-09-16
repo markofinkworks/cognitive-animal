@@ -37,7 +37,7 @@ function renderResultPage() {
   document.documentElement.lang = lang === "en" ? "en" : "ja";
 
   fillText("animal-name-jp", ANIMALS[slug].jp.animal_name);
-  fillText("axis-label", d.vak_label.replace("優位タイプ", "") + "×" + d.eawp_label.replace("優位タイプ", ""));
+  fillText("axis-label", d.vak_label + "×" + d.eawp_label);
   fillText("catchphrase-en", ANIMALS[slug].en.catchphrase);
   fillText("catchphrase", d.catchphrase);
   fillText("lede", d.lede);
