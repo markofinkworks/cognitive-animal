@@ -55,14 +55,14 @@ function renderResultPage() {
   fillBullets("eawp-bullets", d.eawp_bullets);
   fillText("eawp-description", d.eawp_description);
 
-  fillBullets("pitfall-bullets", d.pitfall_bullets);
-  fillText("pitfall-description", d.pitfall_description);
+  fillBullets("feature-bullets", d.feature_bullets);
+  fillText("feature-description", d.feature_description);
 
   fillText("strategy-heading", (ANIMALS[slug].jp.animal_name || "") + "型の生存戦略");
   fillText("strategy-title-vak", d.strategy_title_vak);
   fillText("strategy-body-vak", d.strategy_body_vak);
   fillText("strategy-title-eawp", d.strategy_title_eawp);
-  fillText("strategy-strength", d.strategy_strength);
+  fillText("strategy-feature", d.fstrategy_feature);
   fillText("strategy-scenarios", d.strategy_scenarios);
   fillText("strategy-questions", d.strategy_questions);
   fillText("strategy-resolution", d.strategy_resolution);

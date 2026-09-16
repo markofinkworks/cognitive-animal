@@ -250,14 +250,14 @@ img, svg { display: block; max-width: 100%; }
 }
 
 /* ─────────────────────────────
-   PITFALL
+   FEATURE
 ───────────────────────────── */
-.pitfall-bullets {
+.feature-bullets {
   list-style: none;
   margin-bottom: 16px;
 }
 
-.pitfall-bullets li {
+.feature-bullets li {
   position: relative;
   padding-left: 18px;
   font-size: 0.94rem;
@@ -265,7 +265,7 @@ img, svg { display: block; max-width: 100%; }
   margin-bottom: 14px;
 }
 
-.pitfall-bullets li::before {
+.feature-bullets li::before {
   content: "・";
   position: absolute;
   left: 0;
