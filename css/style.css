@@ -369,9 +369,7 @@ img, svg { display: block; max-width: 100%; }
   margin-bottom: 36px;
 }
 
-.home-axis-list { text-align: center; }
-
-.home-axis-list span { display: inline-block; text-align: left; }
+.home-axis-list { text-align: left; }
 
 .home-cta {
   display: block;
