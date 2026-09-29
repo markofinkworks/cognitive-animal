@@ -187,7 +187,7 @@ const ANIMALS = {
     },
     en: {
       ...emptyLangEntry("Sperm Whale"),
-      catchphrase: "The Resonant Voice"
+      catchphrase: "The Resonant Sound"
     }
   },
 
