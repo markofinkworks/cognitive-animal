@@ -55,6 +55,7 @@ function renderResultPage() {
   fillBullets("eawp-bullets", d.eawp_bullets);
   fillText("eawp-description", d.eawp_description);
 
+  renderIllustration(slug, ANIMALS[slug].jp.animal_name);
   renderAnimalIndex(slug);
   updateLangToggle(lang);
 }
@@ -77,6 +78,22 @@ function updateLangToggle(lang) {
   const enBtn = document.getElementById("lang-en");
   if (jpBtn) jpBtn.setAttribute("aria-current", String(lang === "jp"));
   if (enBtn) enBtn.setAttribute("aria-current", String(lang === "en"));
+}
+
+function renderIllustration(slug, name) {
+  const header = document.querySelector(".result-header");
+  if (!header || document.getElementById("animal-figure")) return;
+  const fig = document.createElement("figure");
+  fig.id = "animal-figure";
+  fig.className = "result-illustration";
+  const img = document.createElement("img");
+  img.src = "../images/animals/" + slug + ".webp";
+  img.alt = name + "のフィールドノート風イラスト";
+  img.width = 1200;   // 実際の画像サイズに合わせる
+  img.height = 900;
+  img.onerror = function () { fig.remove(); };
+  fig.appendChild(img);
+  header.appendChild(fig);
 }
 
 document.addEventListener("DOMContentLoaded", renderResultPage);

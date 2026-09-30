@@ -170,7 +170,15 @@ img, svg { display: block; max-width: 100%; }
   line-height: 1.8;
 }
 
-/* illustration placeholder — 廃止（結果ページではイラスト枠を使わない方針） */
+.result-illustration {
+  max-width: 480px;
+  margin: 32px auto 0;
+}
+.result-illustration img {
+  width: 100%;
+  height: auto;
+  mix-blend-mode: multiply; /* 水彩の紙色を背景になじませる */
+}
 
 /* ─────────────────────────────
    NARRATIVE / BODY TEXT
