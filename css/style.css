@@ -173,6 +173,7 @@ img, svg { display: block; max-width: 100%; }
 .result-illustration {
   max-width: 480px;
   margin: 32px auto 0;
+  overflow: hidden; /* 寄せたときにはみ出さないように */
 }
 .result-illustration img {
   width: 100%;

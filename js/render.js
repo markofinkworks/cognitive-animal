@@ -89,8 +89,10 @@ function renderIllustration(slug, name) {
   const img = document.createElement("img");
   img.src = "../images/animals/" + slug + ".webp";
   img.alt = name + "のフィールドノート風イラスト";
-  img.width = 1200;   // 実際の画像サイズに合わせる
-  img.height = 900;
+  img.width = 1024;   // 実際の画像サイズに合わせる
+  img.height = 1024;
+  const SHIFT = { inko: 4, beaver: 3, kujira: 2 }; // 右へ寄せる量（%）
+if (SHIFT[slug]) img.style.transform = "translateX(" + SHIFT[slug] + "%)";
   img.onerror = function () { fig.remove(); };
   fig.appendChild(img);
   header.appendChild(fig);
