@@ -144,7 +144,7 @@ img, svg { display: block; max-width: 100%; }
   font-size: 0.78rem;
   letter-spacing: 0.04em;
   color: var(--ink-soft);
-  margin-bottom: 28px;
+  margin-top: 14px;
 }
 
 .result-name-jp {
