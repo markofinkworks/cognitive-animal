@@ -96,8 +96,6 @@ if (SHIFT[slug]) img.style.transform = "translateX(" + SHIFT[slug] + "%)";
   img.onerror = function () { fig.remove(); };
   fig.appendChild(img);
   header.appendChild(fig);
-  const axis = document.getElementById("axis-label");
-if (axis) header.appendChild(axis);
 }
 
 document.addEventListener("DOMContentLoaded", renderResultPage);
