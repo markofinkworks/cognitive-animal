@@ -131,14 +131,6 @@ img, svg { display: block; max-width: 100%; }
   padding-bottom: 8px;
 }
 
-.result-eyebrow {
-  font-family: var(--font-garamond);
-  font-style: italic;
-  font-size: 0.85rem;
-  color: var(--ink-soft);
-  margin-bottom: 8px;
-}
-
 .result-axis {
   font-family: var(--font-gothic);
   font-size: 0.78rem;
