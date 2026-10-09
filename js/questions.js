@@ -12,7 +12,7 @@ const QUESTIONS = [
     isTiebreaker: false,
     text: `記憶に残る場面で、一番鮮明に思い出せるのは?`,
     options: [
-      { id: "a", text: `ふと、あの日の窓の外の景色や、相手の表情を思い出す`, axis: "V", points: 1 },
+      { id: "a", text: `あの日の窓の外の景色や、相手の表情を思い出す`, axis: "V", points: 1 },
       { id: "b", text: `あのとき交わした言葉や、声のトーンが耳に残っている`, axis: "A", points: 1 },
       { id: "c", text: `何より、あのときの胸の高鳴りや息苦しさを覚えている`, axis: "K", points: 1 },
     ]
@@ -40,7 +40,7 @@ const QUESTIONS = [
     options: [
       { id: "a", text: `あの顔立ちや、着ていた服の雰囲気`, axis: "V", points: 2 },
       { id: "b", text: `あの話し方や、声の特徴的な響き`, axis: "A", points: 2 },
-      { id: "c", text: `一緒に過ごしたときの、あの空気感`, axis: "K", points: 2 },
+      { id: "c", text: `向かい合ったときの、緊張感や体温のようなもの`, axis: "K", points: 2 },
     ]
   },
   {
@@ -51,9 +51,9 @@ const QUESTIONS = [
     isTiebreaker: false,
     text: `自分の考えを人に説明するとき、自然とやってしまうのは?`,
     options: [
-      { id: "a", text: `紙に書いたり、手振りを交えたりする`, axis: "V", points: 2 },
-      { id: "b", text: `言葉を選びながら、丁寧に話して伝える`, axis: "A", points: 2 },
-      { id: "c", text: `例え話や、自分の体験を交えて伝える`, axis: "K", points: 2 },
+      { id: "a", text: `図にしたり、位置関係を示したりして伝える`, axis: "V", points: 2 },
+      { id: "b", text: `声のトーンや大きさを調整して話す`, axis: "A", points: 2 },
+      { id: "c", text: `実際にやってみせたり、動きを交えて伝える`, axis: "K", points: 2 },
     ]
   },
   {
@@ -91,8 +91,8 @@ const QUESTIONS = [
     text: `旅行から帰ってきて、思い出を振り返るとき`,
     options: [
       { id: "a", text: `あの日あの場所での、ひとつひとつの場面がそのまま蘇る`, axis: "E", points: 1 },
-      { id: "b", text: `良かった点・気になった点を、自然と振り返って整理している`, axis: "A", points: 1 },
-      { id: "c", text: `「とにかく良い旅だった」という全体の印象だけが残っている`, axis: "W", points: 1 },
+      { id: "b", text: `良かった点・気になった点を、振り返って整理している`, axis: "A", points: 1 },
+      { id: "c", text: `「とにかく良い旅だった」という全体の印象が残っている`, axis: "W", points: 1 },
       { id: "d", text: `「次はこうしよう」という、次に活きる段取りが頭に残る`, axis: "P", points: 1 },
     ]
   },
@@ -106,7 +106,7 @@ const QUESTIONS = [
     options: [
       { id: "a", text: `「あのとき、こういうことがあってね」と場面から話し始める`, axis: "E", points: 1 },
       { id: "b", text: `「これはつまり、こういう仕組みで」と要素に分けて話す`, axis: "A", points: 1 },
-      { id: "c", text: `「要するに、こういうことです」と一言でまとめて話す`, axis: "W", points: 1 },
+      { id: "c", text: `「全体として、こういうことです」とまとめて話す`, axis: "W", points: 1 },
       { id: "d", text: `「まずこれをして、次にこれをして」と順を追って話す`, axis: "P", points: 1 },
     ]
   },
@@ -119,8 +119,8 @@ const QUESTIONS = [
     text: `過去の失敗を思い出すとき`,
     options: [
       { id: "a", text: `そのときの場面や、自分の気持ちがそのまま浮かんでくる`, axis: "E", points: 1 },
-      { id: "b", text: `「何が原因だったか」を、あとから自然と分析してしまう`, axis: "A", points: 1 },
-      { id: "c", text: `「まあ、そういう時期だった」と大きな流れの中で捉えている`, axis: "W", points: 1 },
+      { id: "b", text: `「何がどう影響したのか」を、自然と分析してしまう`, axis: "A", points: 1 },
+      { id: "c", text: `「そういう時期だった」と大きな流れの中で捉えている`, axis: "W", points: 1 },
       { id: "d", text: `具体的な出来事より先に、「次からはこうする」が浮かぶ`, axis: "P", points: 1 },
     ]
   },
@@ -134,8 +134,8 @@ const QUESTIONS = [
     options: [
       { id: "a", text: `好きな場面を、ひとつひとつ思い出しながら話す`, axis: "E", points: 1 },
       { id: "b", text: `話の構造や伏線のつながりについて、つい語ってしまう`, axis: "A", points: 1 },
-      { id: "c", text: `「結局何が言いたかったか」を一言で語りたくなる`, axis: "W", points: 1 },
-      { id: "d", text: `好きな場面よりも、話のテンポや流れの心地よさを語る`, axis: "P", points: 1 },
+      { id: "c", text: `作品全体として、何が言いたかったのかを語りたくなる`, axis: "W", points: 1 },
+      { id: "d", text: `どうやってこの場面を見せているのか、つい考えてしまう`, axis: "P", points: 1 },
     ]
   },
   {
@@ -146,9 +146,9 @@ const QUESTIONS = [
     isTiebreaker: false,
     text: `新しい環境に入ったとき、慣れていく感覚は`,
     options: [
-      { id: "a", text: `印象的な出来事を通して、少しずつ馴染んでいく`, axis: "E", points: 2 },
+      { id: "a", text: `日々の中で、印象に残る出来事を積み重ねていく`, axis: "E", points: 2 },
       { id: "b", text: `周りの人間関係やルールを、少しずつ理解していく`, axis: "A", points: 2 },
-      { id: "c", text: `なんとなく、その場の空気に馴染んでいく`, axis: "W", points: 2 },
+      { id: "c", text: `その場の空気を感じ取り、馴染んでいく`, axis: "W", points: 2 },
       { id: "d", text: `日々の動きの中で、体が自然と手順を覚えていく`, axis: "P", points: 2 },
     ]
   },
@@ -162,7 +162,7 @@ const QUESTIONS = [
     options: [
       { id: "a", text: `「あのとき、こうしてくれたよね」と場面を挙げて伝える`, axis: "E", points: 2 },
       { id: "b", text: `「〜のおかげで、こう変わった」と理由を添えて伝える`, axis: "A", points: 2 },
-      { id: "c", text: `「本当にありがとう」と、気持ちをまるごと伝える`, axis: "W", points: 2 },
+      { id: "c", text: `「本当にありがとう」と、感じたことをそのまま伝える`, axis: "W", points: 2 },
       { id: "d", text: `言葉より、相手が助かるような行動で示したくなる`, axis: "P", points: 2 },
     ]
   },
@@ -174,10 +174,10 @@ const QUESTIONS = [
     isTiebreaker: false,
     text: `昔覚えた自転車の乗り方や、体で覚えた何かについて`,
     options: [
-      { id: "a", text: `覚えたときの場所や状況を、今でも覚えている`, axis: "E", points: 2 },
-      { id: "b", text: `あとから振り返ると、体重のかけ方やペダルを踏むタイミングなど、コツを要素に分けて説明できる`, axis: "A", points: 2 },
-      { id: "c", text: `「一度できるようになれば、あとは自然と」という感覚がある`, axis: "W", points: 2 },
-      { id: "d", text: `何年経っても、体が手順を覚えていて、迷わず動ける`, axis: "P", points: 2 },
+      { id: "a", text: `覚えたときの場所や状況が、今でも頭に浮かぶ`, axis: "E", points: 2 },
+      { id: "b", text: `体重のかけ方やペダルを踏むタイミングが、動きにどう影響するかを理解している`, axis: "A", points: 2 },
+      { id: "c", text: `自転車はこういうもの、という感覚がある`, axis: "W", points: 2 },
+      { id: "d", text: `体が手順を覚えていて、迷わず動ける`, axis: "P", points: 2 },
     ]
   },
   {
@@ -188,10 +188,10 @@ const QUESTIONS = [
     isTiebreaker: false,
     text: `迷ったときに頼りにするのは`,
     options: [
-      { id: "a", text: `似たような場面を経験したときの記憶`, axis: "E", points: 2 },
-      { id: "b", text: `状況を整理して、要素ごとに考えた末の判断`, axis: "A", points: 2 },
-      { id: "c", text: `なんとなくこれまでの経験から来る、大きな方向性の感覚`, axis: "W", points: 2 },
-      { id: "d", text: `体に染みついた、いつものやり方`, axis: "P", points: 2 },
+      { id: "a", text: `以前、似たような場面で経験したこと`, axis: "E", points: 2 },
+      { id: "b", text: `状況を整理して見えてくる、全体の構造`, axis: "A", points: 2 },
+      { id: "c", text: `これまでの経験から得た、全体的な感覚`, axis: "W", points: 2 },
+      { id: "d", text: `体が覚えている、いつものやり方`, axis: "P", points: 2 },
     ]
   },
   {
@@ -205,7 +205,7 @@ const QUESTIONS = [
       { id: "a", text: `相手の話す場面が、自分の記憶と重なったとき`, axis: "E", points: 3 },
       { id: "b", text: `相手の話の構造や、言いたいことの筋道が見えたとき`, axis: "A", points: 3 },
       { id: "c", text: `相手の話全体の空気や、言わんとすることが伝わったとき`, axis: "W", points: 3 },
-      { id: "d", text: `相手のやり方や動き方が、自分と近いと感じたとき`, axis: "P", points: 3 },
+      { id: "d", text: `相手の話から、何をしたのか、何をするのかがわかったとき`, axis: "P", points: 3 },
     ]
   },
   {
