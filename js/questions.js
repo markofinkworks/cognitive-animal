@@ -172,7 +172,7 @@ const QUESTIONS = [
     order: 13,
     weight: 2,
     isTiebreaker: false,
-    text: `自転車の乗り方は,`
+    text: `自転車の乗り方は,`,
     options: [
       { id: "a", text: `覚えたときの場所や状況が、今でも頭に浮かぶ`, axis: "E", points: 2 },
       { id: "b", text: `体重のかけ方やペダルを踏むタイミングが、動きにどう影響するかを理解している`, axis: "A", points: 2 },
