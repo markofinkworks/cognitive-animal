@@ -124,7 +124,7 @@ function goNext() {
   render();
 }
 
- function pickTop(scores, tiebreakAxes) {
+function pickTop(scores, tiebreakAxes) {
   const max = Math.max.apply(null, Object.values(scores));
   const top = Object.keys(scores).filter(function (key) {
     return scores[key] === max;
