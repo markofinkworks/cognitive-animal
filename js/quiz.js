@@ -124,14 +124,17 @@ function goNext() {
   render();
 }
 
-  function axisOf(id) {
-    const i = QUESTIONS.findIndex(function (q) { return q.id === id; });
-    return answers[i] ? answers[i].axis : null;
+ function pickTop(scores, tiebreakAxes) {
+  const max = Math.max.apply(null, Object.values(scores));
+  const top = Object.keys(scores).filter(function (key) {
+    return scores[key] === max;
+  });
+  if (top.length === 1) return top[0];
+  for (let i = 0; i < tiebreakAxes.length; i++) {
+    if (tiebreakAxes[i] && top.indexOf(tiebreakAxes[i]) !== -1) return tiebreakAxes[i];
   }
-
-  const topVak = pickTop(vakScores, [axisOf("Q6")]);
-  const topEawp = pickTop(eawpScores, [axisOf("Q16"), axisOf("Q15")]);
-
+  return top[0];
+}
 function finishQuiz() {
   const vakScores = { V: 0, A: 0, K: 0 };
   const eawpScores = { E: 0, A: 0, W: 0, P: 0 };
