@@ -124,16 +124,13 @@ function goNext() {
   render();
 }
 
-function pickTop(scores, tiebreakAxis) {
-  const values = Object.values(scores);
-  const max = Math.max.apply(null, values);
-  const top = Object.keys(scores).filter(function (key) {
-    return scores[key] === max;
-  });
-  if (top.length === 1) return top[0];
-  if (tiebreakAxis && top.indexOf(tiebreakAxis) !== -1) return tiebreakAxis;
-  return top[0];
-}
+  function axisOf(id) {
+    const i = QUESTIONS.findIndex(function (q) { return q.id === id; });
+    return answers[i] ? answers[i].axis : null;
+  }
+
+  const topVak = pickTop(vakScores, [axisOf("Q6")]);
+  const topEawp = pickTop(eawpScores, [axisOf("Q16"), axisOf("Q15")]);
 
 function finishQuiz() {
   const vakScores = { V: 0, A: 0, K: 0 };
@@ -149,20 +146,22 @@ function finishQuiz() {
     }
   });
 
-  // Q6（VAKの最終問・最高配点）と Q16（is_tiebreaker）を同点時の決定打にする
-  const vakTiebreakIndex = QUESTIONS.findIndex(function (q) {
-    return q.axisGroup === "VAK" && q.id === "Q6";
-  });
-  const eawpTiebreakIndex = QUESTIONS.findIndex(function (q) {
-    return q.isTiebreaker;
-  });
+  function axisOf(id) {
+    const i = QUESTIONS.findIndex(function (q) { return q.id === id; });
+    return answers[i] ? answers[i].axis : null;
+  }
 
-  const vakTiebreakAxis = answers[vakTiebreakIndex] ? answers[vakTiebreakIndex].axis : null;
-  const eawpTiebreakAxis = answers[eawpTiebreakIndex] ? answers[eawpTiebreakIndex].axis : null;
+  // VAK：Q6で決める
+  const topVak = pickTop(vakScores, [axisOf("Q6")]);
 
-  const topVak = pickTop(vakScores, vakTiebreakAxis);
-  const topEawp = pickTop(eawpScores, eawpTiebreakAxis);
-
+  // EAWP：Q16 → Q15 → Q14 … と後ろから遡って決める
+  const eawpTiebreaks = [];
+  for (let i = QUESTIONS.length - 1; i >= 0; i--) {
+    if (QUESTIONS[i].axisGroup === "EAWP" && answers[i]) {
+      eawpTiebreaks.push(answers[i].axis);
+    }
+  }
+  const topEawp = pickTop(eawpScores, eawpTiebreaks);
   const animalCode = topVak + topEawp;
   const slug = ANIMAL_CODE_TO_SLUG[animalCode];
 
